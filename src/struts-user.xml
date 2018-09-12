@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!--1. name=是包名，每个package的name不能重复-->
+    <!--2. namespace是访问路径：下面访问应该加上 http://localhost:8080/userNameSpace/userSonNameSpace/user-->
+
+    <!--3. 查找顺序是从子目录往上面找，一旦找到了就停止查找-->
+    <!--如果在userSonNameSpace里面找到了对应的的package标签，如果找到了就找action，-->
+    <!--如果没有找到，就查找上一级的userNameSpace的package标签-->
+    <!--如果在所有namespace中都没有找到，就到默认包里面去找-->
+    <!--Path1/path2/path3 从path3 找 path2 找path1找默认包-->
+
+    <package name="user" namespace="/userNameSpace/userSonNameSpace" extends="struts-default">
+        <action name="user" class="top.itblacklist.action.UserAction">
+            <result name="success">/user.jsp</result>
+        </action>
+    </package>
+</struts>

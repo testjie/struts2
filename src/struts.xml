@@ -5,9 +5,7 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-    <package name="test" extends="struts-default">
-        <action name="index" class="top.itblacklist.action.HelloWorldAction">
-            <result name="success">index.jsp</result>
-        </action>
-    </package>
+    <!--分xml管理-->
+    <include file="struts-index.xml"/>
+    <include file="struts-user.xml"/>
 </struts>
