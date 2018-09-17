@@ -6,6 +6,8 @@
 
 <struts>
     <!--分xml管理-->
-    <include file="struts-index.xml"/>
     <include file="struts-user.xml"/>
+    <include file="struts-conf.xml"/>
+    <include file="struts-index.xml"/>
+    <include file="struts-params.xml"/>
 </struts>

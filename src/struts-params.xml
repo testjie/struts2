@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="params" namespace="/params" extends="struts-default">
+        <!--model接收参数-->
+        <action name="login" class="top.itblacklist.model.LoginAction" method="login">
+            <result name="success">/user.jsp</result>
+        </action>
+
+        <!--modeldriver接收参数-->
+        <action name="mlogin" class="top.itblacklist.modeldriver.LoginAction" method="login">
+            <result name="success">/user.jsp</result>
+        </action>
+
+    </package>
+</struts>
