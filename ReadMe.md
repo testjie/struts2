@@ -6,3 +6,6 @@ Struts2复习框架
 4. action多方法
 5. action多方法通配符
 6. action接收值的三种方式
+7. action传值到前台
+8. 获取servletAPI的方式
+9. s2常用标签（需要的时候查就行了）

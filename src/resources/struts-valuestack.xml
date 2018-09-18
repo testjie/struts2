@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <!--s：debug模式-->
+    <constant name="struts.devMode" value="true"></constant>
+    <package name="valueStack" namespace="/valueStack" extends="struts-default">
+        <!--model接收参数-->
+        <action name="valueStack" class="top.itblacklist.valuestack.ValueStackAction">
+            <result name="success" type="dispatcher">/valueStack.jsp</result>
+        </action>
+    </package>
+</struts>

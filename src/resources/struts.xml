@@ -10,4 +10,6 @@
     <include file="struts-conf.xml"/>
     <include file="struts-index.xml"/>
     <include file="struts-params.xml"/>
+    <include file="struts-interceptor.xml"/>
+    <include file="struts-valuestack.xml"/>
 </struts>
