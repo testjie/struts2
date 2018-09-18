@@ -9,3 +9,4 @@ Struts2复习框架
 7. action传值到前台
 8. 获取servletAPI的方式
 9. s2常用标签（需要的时候查就行了）
+https://blog.csdn.net/q547550831/article/details/53326042
